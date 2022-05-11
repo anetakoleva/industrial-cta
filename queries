@@ -1,0 +1,55 @@
+############################################################
+#List of Equipments from POSC Caesar
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX fn: <http://www.w3.org/2005/xpath-functions#>
+PREFIX p2: <http://rds.posccaesar.org/2008/02/OWL/ISO-15926-2_2003#>
+PREFIX rds: <http://rdl.rdlfacade.org/data#>
+PREFIX afn: <http://jena.hpl.hp.com/ARQ/function#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX rdl: <http://data.posccaesar.org/rdl/>
+PREFIX ptrn: <http://data.posccaesar.org/ptrn/>
+
+
+select ?label
+
+where {
+ ?s ?p <http://data.posccaesar.org/rdl/RDS6298485>.
+ ?s p2:hasClassified ?eq.
+ ?eq rdfs:label ?label.
+}
+
+
+############################################################
+# List of Unit symbols and labels from QUDT
+
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?symbol ?label
+WHERE 
+{
+   ?unit rdf:type qudt:Unit;
+        qudt:symbol ?symbol;
+      	rdfs:label ?label.
+}
+
+
+############################################################
+# List of Quantity Kinds from QUDT
+
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?label
+WHERE 
+{
+   ?uni rdf:type qudt:QuantityKind;
+	rdfs:label ?label.
+}
+
