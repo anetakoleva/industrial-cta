@@ -13,14 +13,14 @@ Here is the diagram of the equipment ontology
 
 ## Extended evaluation results
 
-[Table 3](https://user-images.githubusercontent.com/10827830/175645684-f40c23c3-d106-43c9-9f95-d0b68d5eb901.png) shows the achieved MAP in the unsupervised setting, averaged by the number of test columns in a cluster.  
+![Table 3](https://user-images.githubusercontent.com/10827830/175645684-f40c23c3-d106-43c9-9f95-d0b68d5eb901.png) shows the achieved MAP in the unsupervised setting, averaged by the number of test columns in a cluster.  
 
 
-[Table 4!](https://user-images.githubusercontent.com/10827830/175647212-3f14f966-ada2-477e-bd19-6bb25ee1d5da.png) shows the achieved F1 score, micro averaged, for each of the semantic classes in the the three different settings.
+![Table 4](https://user-images.githubusercontent.com/10827830/175647212-3f14f966-ada2-477e-bd19-6bb25ee1d5da.png) shows the achieved F1 score, micro averaged, for each of the semantic classes in the the three different settings.
 Unsupervised - the calculated F1 score per class in all of the clusters, averaged over the number of clusters that we can evaluate.
 Supervised - the achieved F1 score per class in the multi-label classification setting where we use the labeles learned with the Snorkel model as supervision
 Weak sup. - in this setting we calculate the F1 score same as in the supervised setting, but in this case the predictions for the column types are generated only based on the Snorkel labeling function
 
-[Table 5](https://user-images.githubusercontent.com/10827830/175645743-a1b80b88-51ec-418e-9655-2bf32cd0a1a4.png) shows the evaluation of the supervised approach in terms of the achieved Precision, Recall and F1 score per class.
+![Table 5](https://user-images.githubusercontent.com/10827830/175645743-a1b80b88-51ec-418e-9655-2bf32cd0a1a4.png) shows the evaluation of the supervised approach in terms of the achieved Precision, Recall and F1 score per class.
 
 
